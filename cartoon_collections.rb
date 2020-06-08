@@ -22,7 +22,7 @@ def find_valid_calls(planeteer_calls)
   # Return the first valid call found, or return nil if no valid calls are found
   planeteer_calls.select do |call|
     counter = 0 
-    while valid_calls[counter] do
+    while counter < valid_calls.length do
       if call = valid_calls[counter]
         return call
       end
